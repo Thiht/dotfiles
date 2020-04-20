@@ -29,6 +29,8 @@ source "$ZSH"/oh-my-zsh.sh
 # Standard tooling
 alias sudo='sudo '
 
+export HOMEBREW_NO_ANALYTICS=1
+
 if command -v code >/dev/null; then
   export EDITOR=code
 elif command -v vim >/dev/null; then
