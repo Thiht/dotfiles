@@ -1,6 +1,16 @@
 #!/bin/sh
 
-# See: https://macos-defaults.com/dock/orientation.html
+# See: https://macos-defaults.com
+
+# Find settings: `defaults find <word>`
+# Read setting: `defaults read <domain> <key>`
+# Reset setting: `defaults delete <domain> <key>`
+
+# Global
+# -g can be used as an alias for the global domain (Apple Global Domain)
+
+## Trackpad speed
+defaults write -g com.apple.trackpad.scaling 2
 
 # Dock
 
@@ -16,8 +26,8 @@ defaults write com.apple.dock "show-recents" -bool "false" && killall Dock
 # Screenshots
 
 ## Save screenshots to ~/Pictures/Screenshots
-mkdir -p "~/Pictures/Screenshots"
-defaults write com.apple.screencapture "location" -string "~/Pictures/Screenshots" && killall SystemUIServer
+mkdir -p "$HOME/Pictures/Screenshots"
+defaults write com.apple.screencapture "location" -string "$HOME/Pictures/Screenshots" && killall SystemUIServer
 
 # Finder
 
