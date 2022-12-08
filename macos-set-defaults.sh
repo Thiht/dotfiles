@@ -1,6 +1,8 @@
 #!/bin/sh
 
-# See: https://macos-defaults.com
+# See:
+# - https://macos-defaults.com
+# - https://git.herrbischoff.com/awesome-macos-command-line/about/
 
 # Find settings: `defaults find <word>`
 # Read setting: `defaults read <domain> <key>`
